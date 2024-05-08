@@ -13,6 +13,9 @@ public class Test {
 		System.out.println(televisore.calcoloIva());
 		
 		
+		Smartphone galaxy = new Smartphone("galaxyA23", "un bel telefono", 129.00 ,342424,256);
+		
+		System.out.println(galaxy.toString());
 	}
 
 }
