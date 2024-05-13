@@ -17,6 +17,19 @@ public class Prodotto {
 			this.codice= codiceRandom();
 		}
 		
+		public Prodotto() {
+			this.nome = null;
+			this.descrizione = null;;
+			this.prezzo = 0D;
+			this.iva = 0.22F;
+			this.codice= codiceRandom();
+		}
+		@Override
+		public String toString() {
+			return "Prodotto codice=" + codice + ", nome=" + nome + ", descrizione=" + descrizione + ", prezzo="
+					+ prezzo + ", iva=" + iva + "";
+		}
+
 		private int codiceRandom() {
 			Random numRandom = new Random();
 			 return numRandom.nextInt(1000);
